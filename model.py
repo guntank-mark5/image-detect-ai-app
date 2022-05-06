@@ -48,7 +48,7 @@ def predict(img):
     # 訓練済みモデル
     net = Net()
     net.load_state_dict(torch.load(
-        './image_detect/model_cnn.pth', map_location=torch.device('cpu')
+        './model_cnn.pth', map_location=torch.device('cpu')
     ))
 
     # 予測
